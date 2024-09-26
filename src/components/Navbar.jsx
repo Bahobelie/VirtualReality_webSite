@@ -21,7 +21,7 @@ const Navbar=()=>{
         <div className='sticky top-0 z-50 backdrop-blur border-b border-neutral-700/80'>
             <div className=' container flex mx-auto justify-between items-center'>
 
-                <div className="flex items-center">
+                <div className="flex hover:cursor-pointer items-center">
                   <img className='w-4/4 h-20 rounded mr-3' src={Images.virtual2} alt='log'/>
                     <span className='font-tangerine text-3xl font-semibold'>Virtual Reality</span>
                 </div>

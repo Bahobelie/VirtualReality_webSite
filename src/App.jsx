@@ -4,6 +4,7 @@ import FeatureSection from "./components/FeatuerSection.jsx";
 import WorkFlowSection from "./components/WorkFlowSection.jsx";
 import Pricing from "./components/Pricing.jsx";
 import Testimonials from "./components/Testimonials.jsx";
+import Footer from "./components/Footer.jsx";
 
 const App=()=>{
     return(
@@ -16,6 +17,7 @@ const App=()=>{
                 <Pricing/>
                 <Testimonials/>
             </div>
+                <Footer/>
         </>
     )
 }

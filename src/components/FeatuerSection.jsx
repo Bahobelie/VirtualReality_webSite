@@ -1,5 +1,6 @@
 import Constants from "../constants/Index.js";
 import React from "react";
+import {LuCheckCircle2} from "react-icons/lu";
 
 const FeatureSection=()=>{
     return(
@@ -14,19 +15,24 @@ const FeatureSection=()=>{
 
                     </h1>
                 </div>
-                <div className='lg:mt-40 mt-10 flex flex-wrap'>
-                    {Constants.features.map((item,index)=>(
-                        <div key={index} className='w-full sm:w-1/2 lg:w-1/3'>
-                          <div className='flex'>
-                              <div className='mr-2 w-10 h-10 p-2 bg-neutral-900 text-orange-300 justify-center items-center rounded-full'>
-                                  {React.createElement(item.icon)}
-                              </div>
-                              <div>
-                                  <h5 className='mt-1 mb-6 text-xl'>{item.text}</h5>
-                                  <p className='text-md p-2 mb-20 text-neutral-500'>{item.description}</p>
-                              </div>
-                          </div>
-                        </div>
+                <div className='lg:mt-40 mt-10 border-l-2 border-neutral-300 flex flex-wrap'>
+                    <div className="absolute mt-52 text-green-500 rounded-full -translate-x-1/2 bg-white p-1">
+                        <LuCheckCircle2/>
+                    </div>
+
+                    {Constants.features.map((item, index) => (
+                            <div key={index} className='w-full sm:w-1/2 lg:w-1/3'>
+                                <div className='flex'>
+                                    <div
+                                        className='mr-2 ml-3 w-10 h-10 p-2 bg-neutral-900 text-orange-300 justify-center items-center rounded-full'>
+                                        {React.createElement(item.icon)}
+                                    </div>
+                                    <div>
+                                        <h5 className='mt-1 mb-6 text-xl'>{item.text}</h5>
+                                        <p className='text-md p-2 mb-20 text-neutral-500'>{item.description}</p>
+                                    </div>
+                                </div>
+                            </div>
                         )
                     )}
                 </div>

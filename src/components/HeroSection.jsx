@@ -27,8 +27,8 @@ const HeroSection=()=>{
 
 
             <div className='flex space-x-20 mt-20 items-center'>
-                <a className='border bg-gradient-to-r from-orange-300 to-red-800 hover:cursor-pointer transition duration-200  rounded-md px-3 py-2'>Start for Free</a>
-                <a className='border hover:cursor-pointer  border-neutral-100 px-3 rounded-lg py-2'>Documentation</a>
+                <a className='border bg-gradient-to-r from-orange-300 to-red-800 hover:scale-105 cursor-pointer transition-transform duration-500  rounded-md px-3 py-2'>Start for Free</a>
+                <a className='border hover:scale-105 cursor-pointer transition-transform duration-500 border-neutral-100 px-3 rounded-lg py-2'>Documentation</a>
             </div>
 
             <div className='mt-20 w-full'>

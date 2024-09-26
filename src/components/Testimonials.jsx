@@ -9,12 +9,22 @@ const Testimonials=()=>{
             </h1>
             <div className='flex mt-10 lg:mt-20 flex-wrap justify-center'>
                 {Constants.testimonials.map((item,index)=>(
-                    <div key={index} className='w-full  lg:w-1/3 sm:w-1/3 py-3 px-4'>
+                    <div key={index} className='w-full hover:scale-110 transition-transform duration-1000 lg:w-1/3 sm:w-1/3 py-3 px-4'>
                         <div className='bg-neutral-900 p-6 rounded-md text-md border border-neutral-800 font-thin'>
                             <p>{item.text}</p>
-                            <div className='flex mt-8 items-start'>
-                               <img className='rounded-full size-10' src={item.image} alt='image'/>
+                            <div className='flex mt-8'>
+                                <img className='rounded-full size-10' src={item.image} alt='image'/>
+                                <div className='ml-5'>
+                                    <h6>{item.user}</h6>
+                                    <span className="text-sm font-normal italic text-neutral-600">
+                                      {item.company}
+                                   </span>
+                                </div>
+                                <span className='ml-20 flex text-neutral-500'>
+                                    {new Date().toLocaleDateString()}
+                                </span>
                             </div>
+
                         </div>
                     </div>
                 ))}

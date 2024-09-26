@@ -11,7 +11,7 @@ const WorkFlowSection=()=>{
                 </span>
             </h2>
             <div className="flex  mt-10 flex-wrap justify-center">
-                <div className="p-2 w-full lg:w-1/2">
+                <div className="p-2 w-full  hover:scale-110 transition-transform duration-1000 lg:w-1/2">
                     <img src={Images.CodeImage} alt="Coding"/>
                 </div>
                 <div className="pt-12 w-full lg:w-1/2">

@@ -44,6 +44,7 @@ export const features = [
             "Gain valuable insights into user interactions and behavior within your VR applications with an integrated analytics dashboard.",
     },
 ];
+
 export const checklistItems = [
     {
         title: "Code merge made easy",
@@ -66,6 +67,7 @@ export const checklistItems = [
             "Track the performance of your VR apps and gain insights into user behavior.",
     },
 ];
+
 export const pricingOptions = [
     {
         title: "Free",
@@ -119,7 +121,7 @@ export const testimonials = [
         text: "Working with this company was a pleasure. Their attention to detail and commitment to excellence are commendable. I would highly recommend them to anyone looking for top-notch service.",
     },
     {
-        user: "Ronee Brown",
+        user: "Renee Brown",
         company: "Fusion Dynamics",
         image: Images.user4,
         text: "Working with the team at XYZ Company was a game-changer for our project. Their attention to detail and innovative solutions helped us achieve our goals faster than we thought possible. We are grateful for their expertise and professionalism!",
@@ -128,21 +130,49 @@ export const testimonials = [
         user: "Michael Wilson",
         company: "Visionary Creations",
         image: Images.user5,
-        text: "I am amazed by the level of professionalism and dedication shown by the team. They were able to exceed our expectations and deliver outstanding results.",
+        text: "I am amazed by the level of professionalism and dedication shown by the team. They were able to exceed our expectations and deliver outstanding results.innovative solutions helped us achieve our goals  We are grateful for their expertise and professionalism!",
     },
     {
         user: "Emily Davis",
         company: "Synergy Systems",
         image: Images.user6,
-        text: "The team went above and beyond to ensure our project was a success. Their expertise and dedication are unmatched. I look forward to working with them again in the future.",
+        text: "The team went above and beyond to ensure our project was a success. Their expertise and dedication are unmatched. I look forward to working with them again in the future. We are grateful for their expertise and professionalism!",
     },
 ];
+
+export const resourcesLinks = [
+    { href: "#", text: "Getting Started" },
+    { href: "#", text: "Documentation" },
+    { href: "#", text: "Tutorials" },
+    { href: "#", text: "API Reference" },
+    { href: "#", text: "Community Forums" },
+];
+
+export const platformLinks = [
+    { href: "#", text: "Features" },
+    { href: "#", text: "Supported Devices" },
+    { href: "#", text: "System Requirements" },
+    { href: "#", text: "Downloads" },
+    { href: "#", text: "Release Notes" },
+];
+
+export const communityLinks = [
+    { href: "#", text: "Events" },
+    { href: "#", text: "Meetups" },
+    { href: "#", text: "Conferences" },
+    { href: "#", text: "Hackathons" },
+    { href: "#", text: "Jobs" },
+];
+
 const Constants={
     NavItems,
     checklistItems,
     features,
     pricingOptions,
-    testimonials
+    testimonials,
+    platformLinks,
+    communityLinks,
+    resourcesLinks
 };
 
 export default Constants;
