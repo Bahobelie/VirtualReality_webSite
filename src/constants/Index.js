@@ -4,7 +4,7 @@ import {FaFingerprint} from "react-icons/fa";
 import {BiArrowToTop, BiPlug, BiShieldAlt} from "react-icons/bi";
 import {GiLockedDoor} from "react-icons/gi";
 import Images from "../assets/index.jsx";
-
+import {Facebook,Instagram,Telegram} from "@mui/icons-material";
 
 export const features = [
     {
@@ -163,6 +163,11 @@ export const communityLinks = [
     { href: "#", text: "Hackathons" },
     { href: "#", text: "Jobs" },
 ];
+export  const socialMedeaIcon=[
+    {name:"Facebook",icon:Facebook,link:"#"},
+    {name:"Instagram",icon:Instagram,link:"#"},
+    {name:"Telegram",icon:Telegram,link:"https://t.me/Lamesgnc"},
+]
 
 const Constants={
     NavItems,
@@ -172,7 +177,8 @@ const Constants={
     testimonials,
     platformLinks,
     communityLinks,
-    resourcesLinks
+    resourcesLinks,
+    socialMedeaIcon
 };
 
 export default Constants;

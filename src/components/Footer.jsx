@@ -1,6 +1,7 @@
 import {LuCheckCircle2} from "react-icons/lu";
 import Images from "../assets/index.jsx";
 import Constants from "../constants/Index.js";
+import React from "react";
 
 const Footer=()=>{
  return (
@@ -13,7 +14,7 @@ const Footer=()=>{
                          <li key={index}>
                              <a
                                  href={link.href}
-                                 className="text-neutral-500 hover:text-white"
+                                 className="text-neutral-500 hover:text-green-300"
                              >
                                  {link.text}
                              </a>
@@ -28,7 +29,7 @@ const Footer=()=>{
                          <li key={index}>
                              <a
                                  href={link.href}
-                                 className="text-neutral-500 hover:text-white"
+                                 className="text-neutral-500 hover:text-green-300"
                              >
                                  {link.text}
                              </a>
@@ -43,7 +44,7 @@ const Footer=()=>{
                          <li key={index}>
                              <a
                                  href={link.href}
-                                 className="text-neutral-500 hover:text-white"
+                                 className="text-neutral-500 hover:text-green-300"
                              >
                                  {link.text}
                              </a>
@@ -51,7 +52,18 @@ const Footer=()=>{
                      ))}
                  </ul>
              </div>
+
          </div>
+         <div className="mt-20 flex justify-center items-center">
+             <div className="flex flex-row hover:cursor-pointer space-x-4">
+                 {Constants.socialMedeaIcon.map((item, index) => (
+                     <ul key={index}>
+                         <a href={item.link}>{React.createElement(item.icon)}</a>
+                     </ul>
+                 ))}
+             </div>
+         </div>
+
      </footer>
 
  )

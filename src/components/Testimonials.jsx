@@ -10,7 +10,7 @@ const Testimonials=()=>{
             <div className='flex mt-10 lg:mt-20 flex-wrap justify-center'>
                 {Constants.testimonials.map((item,index)=>(
                     <div key={index} className='w-full hover:scale-110 transition-transform duration-1000 lg:w-1/3 sm:w-1/3 py-3 px-4'>
-                        <div className='bg-neutral-900 p-6 rounded-md text-md border border-neutral-800 font-thin'>
+                        <div className='text-neutral-300 p-6 rounded-md text-md border border-neutral-800 font-thin'>
                             <p>{item.text}</p>
                             <div className='flex mt-8'>
                                 <img className='rounded-full size-10' src={item.image} alt='image'/>

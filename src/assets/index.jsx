@@ -12,6 +12,8 @@ import user3 from './user3.jpg';
 import user4 from './user4.jpg';
 import user5 from './user5.jpg';
 import user6 from './user6.jpg';
+import  CodeInVer from './codeinVR.webp';
+
 const Images= {
     VReality,
     virtual2,
@@ -22,7 +24,7 @@ const Images= {
     CodeImage,
     Video5,
     user1,
-    user2,user3,user4,user5,user6
+    user2,user3,user4,user5,user6,CodeInVer
 }
 
 export default Images;

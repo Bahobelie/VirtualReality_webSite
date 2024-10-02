@@ -1,18 +1,21 @@
 
 import Images from "../assets/index.jsx";
 import Constants from "../constants/Index.js";
-import {useState} from "react";
+import React, { useState} from "react";
 ;
 import {IoClose} from "react-icons/io5";
 import {BiMenu, BiSolidLogInCircle} from "react-icons/bi";
 import {CiCirclePlus} from "react-icons/ci";
+import DarkModeIcon from '@mui/icons-material/DarkMode';
+import WbSunnyOutlinedIcon from '@mui/icons-material/WbSunnyOutlined';
+import {IconButton} from "@mui/material";
 
-
-const Navbar=()=>{
+const Navbar=React.memo(({changeMode,mode})=>{
     const [mobileOpenDrawerOpen,setMobileDrawerOpen]=useState(false);
 
-    //Todo:handle all event
+    console.log('child render');
 
+    //Todo:handle all event
     const toggleOpen=()=>{
         setMobileDrawerOpen(!mobileOpenDrawerOpen);
     }
@@ -22,7 +25,7 @@ const Navbar=()=>{
             <div className=' container flex mx-auto justify-between items-center'>
 
                 <div className="flex hover:cursor-pointer items-center">
-                  <img className='w-4/4 h-20 rounded mr-3' src={Images.virtual2} alt='log'/>
+                  <img className='w-4/4 h-20 rounded-full mr-3' src={Images.virtual2} alt='log'/>
                     <span className='font-tangerine text-3xl font-semibold'>Virtual Reality</span>
                 </div>
 
@@ -37,7 +40,17 @@ const Navbar=()=>{
                        ))}
                    </ul>
                 </div>
+
                 <div className='hidden lg:flex p-3 justify-end items-center space-x-12'>
+                    {mode?(<IconButton onClick={changeMode}>
+                        <DarkModeIcon/>
+                    </IconButton>):
+                        (<IconButton onClick={changeMode}>
+                            <WbSunnyOutlinedIcon/>
+                        </IconButton>
+                        )
+                    }
+
                     <a className='hover:border rounded-md px-3 py-1' href='#'>
                         Sign in
                     </a>
@@ -82,5 +95,5 @@ const Navbar=()=>{
             )}
         </div>
     )
-}
+});
 export default Navbar;
