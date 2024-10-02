@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite ffbuild",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite view"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
