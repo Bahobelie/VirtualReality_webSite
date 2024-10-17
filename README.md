@@ -2,4 +2,4 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-LivePreview-https://hotel-website1.vercel.app/
+
